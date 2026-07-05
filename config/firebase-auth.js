@@ -2,34 +2,51 @@ import app from "./firebase-config.js";
 
 import {
   getAuth,
-  signInWithPopup,
   FacebookAuthProvider,
+  signInWithPopup,
+  onAuthStateChanged,
   signOut
-} from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 
 const auth = getAuth(app);
+
 const provider = new FacebookAuthProvider();
 
-// LOGIN FACEBOOK
+/**
+ * Login com Facebook
+ */
 export async function loginFacebook() {
   try {
+
     const result = await signInWithPopup(auth, provider);
-    const user = result.user;
 
-    console.log("Utilizador logado:", user);
+    console.log("Login realizado!");
 
-    localStorage.setItem("user", JSON.stringify(user));
-
-    window.location.href = "pages/painel.html";
+    return result.user;
 
   } catch (error) {
-    console.error("Erro no login Facebook:", error);
+
+    console.error(error);
+
+    throw error;
+
   }
 }
 
-// LOGOUT
-export async function logout() {
+/**
+ * Logout
+ */
+export async function logoutFacebook() {
+
   await signOut(auth);
-  localStorage.removeItem("user");
-  window.location.href = "../index.html";
+
+}
+
+/**
+ * Observa alterações de sessão
+ */
+export function observarAutenticacao(callback){
+
+    onAuthStateChanged(auth, callback);
+
 }
