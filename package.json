@@ -1,0 +1,23 @@
+{
+  "name": "4-agente-de-markting-digital",
+  "version": "1.0.0",
+  "description": "**Agente de Marketing Digital**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoAntoniodev988/Agente-De-Markting-Digital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoAntoniodev988/Agente-De-Markting-Digital/issues"
+  },
+  "homepage": "https://github.com/JoaoAntoniodev988/Agente-De-Markting-Digital#readme",
+  "dependencies": {
+    "firebase": "^12.15.0"
+  }
+}
