@@ -86,3 +86,7 @@ https://github.com/JoaoAntoniodev988
 Licença
 
 Este projeto está licenciado sob a licença MIT.
+
+Estado do Projeto
+
+Este projeto encontra-se em desenvolvimento ativo e novas funcionalidades são adicionadas de forma incremental.
