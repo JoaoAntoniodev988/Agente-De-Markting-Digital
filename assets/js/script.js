@@ -17,7 +17,7 @@ botaoConectar.addEventListener('click', function() {
         localStorage.setItem('usuarioConectado', 'true');
         
         // Redirecionamos o usuário para a tela do painel (vamos criar esse arquivo a seguir)
-        window.location.href = 'painel.html';
+        window.location.href = 'pages/painel.html';
 
     }, 2000); // 2000 milissegundos = 2 segundos
 });
