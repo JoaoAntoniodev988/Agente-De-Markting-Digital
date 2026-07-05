@@ -1,12 +1,12 @@
-Agente de Marketing Digital
+**Agente de Marketing Digital**
 
 Uma plataforma web desenvolvida para ajudar pequenos empreendedores, vendedores ambulantes e pequenos negócios a promoverem os seus produtos e serviços através do marketing digital.
 
-Sobre o Projeto
+**Sobre o Projeto**
 
 O Agente de Marketing Digital nasceu com o objetivo de facilitar o acesso ao marketing digital para pequenos empreendedores, permitindo criar campanhas de forma simples, intuitiva e acessível. Este projeto está a ser desenvolvido como parte do meu portfólio, seguindo boas práticas de desenvolvimento Front-end e evoluindo gradualmente para uma aplicação Full Stack.
 
-Funcionalidades
+**Funcionalidades**
 
 - Login do utilizador
 - Interface responsiva
@@ -15,7 +15,7 @@ Funcionalidades
 - Estrutura modular
 - Preparado para integração com APIs
 
-Tecnologias
+**Tecnologias**
 
 - HTML5
 - CSS3
@@ -23,7 +23,7 @@ Tecnologias
 - Git
 - GitHub
 
-Tecnologias previstas
+**Tecnologias previstas**
 
 - Firebase Authentication
 - Cloud Firestore
@@ -32,7 +32,7 @@ Tecnologias previstas
 - Express
 - Progressive Web App (PWA)
 
-Estrutura do Projeto
+**Estrutura do Projeto**
 
 assets/
 │
@@ -49,7 +49,7 @@ pages/
 index.html
 README.md
 
-Objetivos
+**Objetivos**
 
 - Desenvolver uma plataforma moderna.
 - Aprender autenticação com Facebook.
@@ -58,7 +58,7 @@ Objetivos
 - Transformar o projeto num PWA.
 - Publicar um APK Android.
 
-Roadmap
+**Roadmap**
 
 - ✅ Estrutura do projeto
 - ✅ Organização das pastas
@@ -72,21 +72,21 @@ Roadmap
 - ⏳ Progressive Web App
 - ⏳ APK Android
 
-Capturas de ecrã
+**Capturas de ecrã**
 
 Em breve...
 
-Autor
+**Autor**
 
 João Antônio
 
 GitHub:
 https://github.com/JoaoAntoniodev988
 
-Licença
+**Licença**
 
 Este projeto está licenciado sob a licença MIT.
 
-Estado do Projeto
+**Estado do Projeto**
 
 Este projeto encontra-se em desenvolvimento ativo e novas funcionalidades são adicionadas de forma incremental.
