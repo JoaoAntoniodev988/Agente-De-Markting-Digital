@@ -43,6 +43,20 @@ assets/
 └── fonts/
 
 config/
+├── Configuração do Firebase
+
+services/
+├── Autenticação
+├── Utilizadores
+└── Integração com Meta API
+
+assets/js/
+├── Login
+└── Dashboard
+
+pages/
+├── Página inicial
+└── Painel
 
 pages/
 
