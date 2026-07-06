@@ -1,4 +1,5 @@
 import { loginFacebook } from "../../config/firebase-auth.js";
+import { salvarUtilizador } from "../../config/firestore.js";
 
 const botaoConectar = document.getElementById("btn-facebook-connect");
 
@@ -7,19 +8,21 @@ botaoConectar.addEventListener("click", async () => {
     botaoConectar.disabled = true;
     botaoConectar.innerHTML = "Conectando...";
 
-    try{
+    try {
 
-        await loginFacebook();
+        const user = await loginFacebook();
+
+        await salvarUtilizador(user);
 
         window.location.href = "pages/painel.html";
 
-    }catch(error){
+    } catch (error) {
+    console.error(error);
 
-        alert("Não foi possível entrar com o Facebook.");
+    alert(error.message);
 
-        botaoConectar.disabled = false;
-        botaoConectar.innerHTML = "Conectar com Facebook";
-
-    }
+    botaoConectar.disabled = false;
+    botaoConectar.innerHTML = "Conectar com Facebook";
+}
 
 });
