@@ -1,25 +1,25 @@
-import app from "./firebase-config.js";
-
-import {
-  getAuth,
-  FacebookAuthProvider,
-  signInWithPopup
-} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
-
-const auth = getAuth(app);
-const provider = new FacebookAuthProvider();
+import { criarOuAtualizarUtilizador } from "../services/user.service.js";
 
 export async function loginFacebook() {
-  try {
-    const result = await signInWithPopup(auth, provider);
 
-    console.log("Login efetuado com sucesso!");
-    console.log(result.user);
+    try {
 
-    return result.user;
+        const result = await signInWithPopup(auth, provider);
 
-  } catch (error) {
-    console.error("Erro no login:", error);
-    throw error;
-  }
+        const user = result.user;
+
+        await criarOuAtualizarUtilizador(user);
+
+        console.log("Login efetuado com sucesso!");
+
+        return user;
+
+    } catch (error) {
+
+        console.error("Erro no login:", error);
+
+        throw error;
+
+    }
+
 }

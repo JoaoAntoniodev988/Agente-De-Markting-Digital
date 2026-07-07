@@ -2,19 +2,121 @@ import db from "../config/firestore.js";
 
 import {
     doc,
-    getDoc
+    getDoc,
+    setDoc,
+    updateDoc,
+    serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
 
-export async function getUser(uid) {
 
-    const documento = await getDoc(doc(db, "users", uid));
+// =========================
+// Obter utilizador
+// =========================
 
-    if (!documento.exists()) {
+export async function obterUtilizador(uid) {
 
-        return null;
+    try {
+
+        const documento = await getDoc(doc(db, "users", uid));
+
+        if (!documento.exists()) {
+
+            return null;
+
+        }
+
+        return documento.data();
+
+    } catch (error) {
+
+        console.error("Erro ao obter utilizador:", error);
+
+        throw error;
 
     }
 
-    return documento.data();
+}
+
+
+
+// =========================
+// Criar ou atualizar
+// =========================
+
+export async function criarOuAtualizarUtilizador(user) {
+
+    try {
+
+        const referencia = doc(db, "users", user.uid);
+
+        const documento = await getDoc(referencia);
+
+        if (!documento.exists()) {
+
+            await setDoc(referencia, {
+
+                uid: user.uid,
+
+                displayName: user.displayName,
+
+                email: user.email,
+
+                photoURL: user.photoURL,
+
+                provider: "facebook",
+
+                saldo: 0,
+
+                plano: "Gratuito",
+
+                empresa: "",
+
+                campanhas: 0,
+
+                paginasFacebook: [],
+
+                instagramAccounts: [],
+
+                configuracoes: {
+
+                    idioma: "pt",
+
+                    notificacoes: true
+
+                },
+
+                createdAt: serverTimestamp(),
+
+                lastLogin: serverTimestamp()
+
+            });
+
+            console.log("Novo utilizador criado.");
+
+        } else {
+
+            await updateDoc(referencia, {
+
+                displayName: user.displayName,
+
+                email: user.email,
+
+                photoURL: user.photoURL,
+
+                lastLogin: serverTimestamp()
+
+            });
+
+            console.log("Utilizador atualizado.");
+
+        }
+
+    } catch (error) {
+
+        console.error("Erro ao guardar utilizador:", error);
+
+        throw error;
+
+    }
 
 }
