@@ -1,3 +1,5 @@
+import { obterUtilizador } from "../../services/user.service.js";
+
 const nome = document.getElementById("user-name");
 const email = document.getElementById("user-email");
 const foto = document.getElementById("user-photo");
