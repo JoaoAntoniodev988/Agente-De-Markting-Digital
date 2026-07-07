@@ -4,103 +4,201 @@ Uma plataforma web desenvolvida para ajudar pequenos empreendedores, vendedores 
 
 **Sobre o Projeto**
 
-O Agente de Marketing Digital nasceu com o objetivo de facilitar o acesso ao marketing digital para pequenos empreendedores, permitindo criar campanhas de forma simples, intuitiva e acessível. Este projeto está a ser desenvolvido como parte do meu portfólio, seguindo boas práticas de desenvolvimento Front-end e evoluindo gradualmente para uma aplicação Full Stack.
+O Agente de Marketing Digital nasceu com o objetivo de facilitar o acesso ao marketing digital para pequenos empreendedores e não só, permitindo criar campanhas de forma simples, intuitiva e acessível. Este projeto está a ser desenvolvido como parte do meu portfólio, seguindo boas práticas de desenvolvimento Front-end e evoluindo gradualmente para uma aplicação Full Stack.
 
-**Funcionalidades**
 
-- Login do utilizador
-- Interface responsiva
-- Painel administrativo
-- Página de pagamento
-- Estrutura modular
-- Preparado para integração com APIs
+No futuro a plataforma será capaz de:
 
-**Tecnologias**
+- Criar campanhas automaticamente
+- Gerar textos com IA
+- Melhorar imagens
+- Publicar anúncios
+- Mostrar métricas das campanhas
+- Gerir páginas do Facebook e Instagram
+
+---
+
+# 🌐 Aplicação Online
+
+**Produção**
+
+https://agente-de-marketing-digi-9164d.web.app
+
+---
+
+# 🚧 Estado do Projeto
+
+Em desenvolvimento ativo.
+
+---
+
+# ✅ Funcionalidades Implementadas
+
+- Login com Facebook
+- Firebase Authentication
+- Firebase Hosting
+- Cloud Firestore
+- Registo automático de utilizadores
+- Dashboard protegido
+- Arquitetura modular baseada em Services
+
+---
+
+# 🔄 Em Desenvolvimento
+
+- Dashboard dinâmico
+- Carteira digital
+- Gestão de utilizadores
+
+---
+
+# ⏳ Próximas Funcionalidades
+
+- Meta Graph API
+- Gestão de páginas Facebook
+- Integração Instagram
+- Backend Node.js
+- Progressive Web App (PWA)
+- Aplicação Android
+
+---
+
+# 🛠 Tecnologias
+
+Frontend
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-- Git
-- GitHub
+- JavaScript (ES6 Modules)
 
-**Tecnologias previstas**
+Backend (planeado)
+
+- Node.js
+- Express
+
+Cloud
 
 - Firebase Authentication
 - Cloud Firestore
-- Meta Graph API
-- Node.js
-- Express
-- Progressive Web App (PWA)
+- Firebase Hosting
 
-**Estrutura do Projeto**
+Ferramentas
 
-assets/
+- Git
+- GitHub
+- Visual Studio Code
+
+---
+
+# 📂 Estrutura do Projeto
+
+```text
+Agente-De-Marketing-Digital/
+
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
 │
-├── css/
-├── js/
-├── images/
-├── icons/
-└── fonts/
+├── config/
+│   ├── firebase-config.js
+│   ├── firebase-auth.js
+│   └── firestore.js
+│
+├── services/
+│   ├── auth.service.js
+│   ├── user.service.js
+│   └── facebook.service.js
+│
+├── pages/
+│   └── painel.html
+│
+├── index.html
+└── README.md
+```
 
-config/
-├── Configuração do Firebase
+---
 
-services/
-├── Autenticação
-├── Utilizadores
-└── Integração com Meta API
+# 🚀 Como executar o projeto
 
-assets/js/
-├── Login
-└── Dashboard
+Clone o repositório
 
-pages/
-├── Página inicial
-└── Painel
+```bash
+git clone https://github.com/JoaoAntoniodev988/Agente-De-Markting-Digital.git
+```
 
-pages/
+Entre na pasta
 
-index.html
-README.md
+```bash
+cd Agente-De-Markting-Digital
+```
 
-**Objetivos**
+Execute um servidor local (Live Server, Firebase Hosting ou outro servidor HTTP).
 
-- Desenvolver uma plataforma moderna.
-- Aprender autenticação com Facebook.
-- Consumir APIs da Meta.
-- Criar um Dashboard profissional.
-- Transformar o projeto num PWA.
-- Publicar um APK Android.
+---
 
-**Roadmap**
+# 🗺 Roadmap
 
-- ✅ Estrutura do projeto
-- ✅ Organização das pastas
-- ⏳ README Profissional
-- ⏳ Facebook Login
+## v0.1.0
+
+- ✅ Estrutura inicial
+
+## v0.2.0
+
+- ✅ Login com Facebook
+
+## v0.3.0
+
+- ✅ Firebase Authentication
+
+## v0.4.0
+
+- ✅ Cloud Firestore
+
+## v0.5.0
+
+- 🔄 Dashboard Inteligente
+
+## v0.6.0
+
 - ⏳ Meta Graph API
-- ⏳ Firebase Authentication
-- ⏳ Firestore
-- ⏳ Dashboard Dinâmico
-- ⏳ Backend Node.js
-- ⏳ Progressive Web App
-- ⏳ APK Android
 
-**Capturas de ecrã**
+## v0.7.0
+
+- ⏳ Backend Node.js
+
+## v0.8.0
+
+- ⏳ Progressive Web App
+
+## v1.0.0
+
+- ⏳ Primeira versão oficial
+
+---
+
+# 📸 Capturas de Ecrã
 
 Em breve...
 
-**Autor**
+---
+
+# 👨‍💻 Autor
 
 João Antônio
 
-GitHub:
+GitHub
+
 https://github.com/JoaoAntoniodev988
 
-**Licença**
+LinkedIn
+
+https://www.linkedin.com/in/jo%C3%A3o-de-sousa-ant%C3%B3nio-971077285/
+
+---
+
+# 📄 Licença
 
 Este projeto está licenciado sob a licença MIT.
-
-**Estado do Projeto**
-
-Este projeto encontra-se em desenvolvimento ativo e novas funcionalidades são adicionadas de forma incremental.
